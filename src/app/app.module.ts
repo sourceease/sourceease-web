@@ -46,7 +46,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatMenuModule,
     MatRippleModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
