@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.innerContainer {
+    max-width: 100%;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.mainBg {
+    // background-image: url('../../../../../../../../assets/images/sourceease/home/main.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/home/main.png');
+    background-size: 100%;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.bgTxt{
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+    width: 37rem;
+    line-height: normal;
+}
+
+.diffCornBrdr {
+    border-radius: 20px 0px 20px 20px;
+}
+
+.wychosUs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.wyItem1 {
+    grid-column-start: span 2;
+}
+.wyItem2 {
+    grid-column-start: span 3;
+}
+.wyItem3 {
+    grid-column-start: span 3;
+}
+.wyItem4 {
+    grid-column-start: span 2;
+}
+
+.wyItem5 {
+    grid-column-start: span 5;
+}
+
+.boxShadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.scrolling-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.scrolling-content {
+    display: inline-flex;
+    animation: scrolling 45s linear infinite alternate;
+    animation-delay: 0s;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-350%);
+    }
+}
+
+@media(max-width:500px) {
+    @keyframes scrolling {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-260%);
+        }
+    }
+}
+
+// screen 600
+
+@media(max-width:600px) {
+    .wychosUs-grid {
+        display: block;
+    }
+
+    .bgTxt{
+        font-size: 40px;
+        width: 23rem;
+        line-height: normal;
+    }
+    // mobMain.png
+    .mainBg {
+        // background-image: url('../../../../../../../../assets/images/sourceease/home/main.png');
+        background: linear-gradient(rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/home/mobMain.png');
+        background-size: 100%;
+        background-size: cover;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .scrolling-content > img {
+        width: 25rem !important;
+        height: 3rem !important;
+    }
+    .innerContainer {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

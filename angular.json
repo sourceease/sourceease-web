@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -72,7 +73,8 @@
               "browserTarget": "SE-WEB:build:production"
             },
             "development": {
-              "browserTarget": "SE-WEB:build:development"
+              "browserTarget": "SE-WEB:build:development",
+              "port": 5200
             }
           },
           "defaultConfiguration": "development"
@@ -96,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5ba532bb-ae29-4eb8-84fc-250d9fd1c1e3"
   }
 }

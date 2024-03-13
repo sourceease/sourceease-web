@@ -1,0 +1,21 @@
+:host {
+    display: block;
+    margin-top: auto;
+    /* Push the footer to the bottom */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.social-icon-gmail {
+    width: 42px;
+    height: 35px;
+}
