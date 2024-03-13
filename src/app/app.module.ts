@@ -18,6 +18,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
+import { ItStaffingComponent } from './pages/it-staffing/it-staffing.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import {MatInputModule} from '@angular/material/input';
     SeContactUsComponent,
     SeHeaderComponent,
     SeFooterComponent,
+    ItStaffingComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import {MatInputModule} from '@angular/material/input';
      MatButtonModule,
     MatMenuModule,
     MatRippleModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

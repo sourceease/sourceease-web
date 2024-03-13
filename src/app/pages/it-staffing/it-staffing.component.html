@@ -1,0 +1,192 @@
+<div class="container bg-white">
+    <div class="mainBg">
+        <div class="mb-14 ml-12">
+            <div class="bgTxt archivo-narrow">"Navigate the Future: Precision-Paced <br> Digital Deliveries, Anytime,
+                Anywhere."</div>
+        </div>
+    </div>
+
+    <div class="innerContainer mb-8">
+
+        <!-- IT Staffing Solutions -->
+
+        <div class="">
+            <h1 class="text-[#424242] font-bold lg:text-5xl text-3xl mt-11 mb-3 archivo-narrow">IT Staffing Solutions
+            </h1>
+            <div class="text-justify w-full text-[#525252] mt-2 text-xl roboto-font">We
+                Introducing our IT staffing solutions, your reliable resource for any aspect of IT. We ensure the
+                success of your digital endeavors with our unwavering dedication to quality and our knowledge of the
+                always changing technology landscape. Our skilled experts offer individualized solutions suited to your
+                particular needs, from the start of new projects to system upgrades. You can count on flawless
+                execution, exceptional results, and measurable value given at every turn along your digital journey when
+                we are by your side. Unlock the full potential of your initiatives and experience the difference with
+                our IT Delivery Services.
+                ​</div>
+        </div>
+
+        <!-- seperation line -->
+
+        <div class="border border-[#0000002e] w-full mt-12 mb-12"></div>
+
+        <!-- Delivery Models -->
+
+        <div>
+            <h1 class="text-[#424242] font-bold lg:text-5xl text-3xl mt-11 mb-3 archivo-narrow">Delivery Models
+            </h1>
+            <div class="flex flex-row gap-14 mt-8">
+                <div class="basis-full">
+                    <div class="image_container">
+                        <img src="../../../assets/sourceease/it-staffing/delivery1.png" class="image">
+                        <div class="overlay">
+                            <h1 class="text-4xl text-white archivo-narrow text-center font-bold pt-4">Client Managed
+                                Staffing</h1>
+                            <h2 class="text-xl roboto-font text-justify text-white p-6">Collaborate with us for shared
+                                success through our Co-Managed Staffing solution. Work
+                                closely with our team to jointly manage resources and outcomes, leveraging our expertise
+                                and your domain knowledge to drive project success and exceed expectations. </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-full">
+                    <div class="image_container">
+                        <img src="../../../assets/sourceease/it-staffing/delivery2.png" class="image">
+                        <div class="overlay">
+                            <h1 class="text-4xl text-white archivo-narrow text-center font-bold pt-4">Managed Staffing
+                            </h1>
+                            <h2 class="text-xl roboto-font text-justify text-white p-6">Experience hassle-free staffing
+                                with our Managed Staffing solution. Benefit from a
+                                dedicated Delivery Manager, outcome-based service, and comprehensive resource
+                                management, allowing you to focus on your core business priorities while we handle the
+                                rest. 
+                                 </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-full">
+                    <div class="image_container">
+                        <img src="../../../assets/sourceease/it-staffing/delivery3.png" class="image">
+                        <div class="overlay">
+                            <h1 class="text-4xl text-white archivo-narrow text-center font-bold pt-4">Client Managed
+                                Staffing</h1>
+                            <h2 class="text-xl roboto-font text-justify text-white p-6">Client Managed Staffing
+                                Empower your organization with full control over your workforce through our Client
+                                Managed Staffing solution. Seamlessly integrate our resources into your operations while
+                                maintaining oversight and direction, ensuring alignment with your business objectives.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Supported Technologies -->
+
+        <div>
+            <h1 class="text-[#424242] font-bold lg:text-5xl text-3xl mt-18 mb-12 archivo-narrow">Supported Technologies
+            </h1>
+
+            <div>
+                <div class="flex flex-row">
+                    <div class="basis-2/6">
+                        <div><img class="w-full" src="../../../assets/sourceease/it-staffing/supported.png"
+                                alt="Image Not Fonnd">
+                        </div>
+                    </div>
+                    <div class="basis-4/6">
+                        <div class="flex flex-row divide-x">
+
+                            <!-- Tabs -->
+
+                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                                (click)="chngTech(1)">Web Application Development</div>
+                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                                (click)="chngTech(2)">Mobile Application Development</div>
+                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                                (click)="chngTech(3)">Middleware
+                                Support</div>
+                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                                (click)="chngTech(4)">Business/Artifical
+                                Intelligent</div>
+                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                                (click)="chngTech(5)">Automation Frameworks & Tools</div>
+                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                                (click)="chngTech(6)">Cloud Based Solution Implementations</div>
+                        </div>
+
+                        <!-- Content -->
+
+                        <div class="">
+                            <div class="flex flex-row gap-18 pt-8 pl-14 pr-8 flex-wrap">
+                                <div *ngFor="let item of getFilteredTechnologies()">
+                                    <img [src]="item.imageUrl" alt="Icon Not Found">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Why Choose Us? -->
+
+        <div class="mb-18">
+            <h1 class="text-[#424242] font-bold lg:text-5xl text-3xl mt-18 mb-12 archivo-narrow">Why Choose Us?
+            </h1>
+
+            <div class="flex flex-row justify-evenly">
+                <div class="p-8 basis-1/5 boxShadow">
+                    <div>
+                        <div class="text-center"><img class="inline-block" src="../../../assets/sourceease/it-staffing/w1.png" alt="Image Not Found"></div>
+                    </div>
+                    <div>
+                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">Talent
+                            Market Place</h1>
+
+                        <div class="text-xl roboto-font text-justify text-[#525252]">
+                            Access our just-in-time talent pool through our Talent Marketplace. We provide flexible
+                            development and engagement models, ensuring that you have the right expertise for your
+                            projects exactly when you need it. Our customized cost and effort offerings adapt to your
+                            budget and requirements, providing you with tailored solutions that fit your needs
+                            perfectly.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 basis-1/5 boxShadow">
+                    <div>
+                        <div class="text-center"><img class="inline-block" src="../../../assets/sourceease/it-staffing/w2.png" alt="Image Not Found"></div>
+                    </div>
+                    <div>
+                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">Product Capability</h1>
+
+                        <div class="text-xl roboto-font text-justify text-[#525252]">
+                            Centered on product organization, we offer robust business and operational expertise. Our
+                            in-house IT team excels in crafting and maintaining cloud-based web/mobile products,
+                            guaranteeing scalability, security, and future-readiness. With our capabilities, rest
+                            assured your solutions are not only cutting-edge but also primed to adapt and thrive in an
+                            ever-evolving digital landscape.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 basis-1/5 boxShadow">
+                    <div>
+                        <div class="text-center"><img class="inline-block" src="../../../assets/sourceease/it-staffing/w3.png" alt="Image Not Found"></div>
+                    </div>
+                    <div>
+                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">Rich Legacy</h1>
+
+                        <div class="text-xl roboto-font text-justify text-[#525252]">
+                            Benefit from our experience in building business and technology capabilities in multiple
+                            large enterprises. Our rich legacy ensures that we bring a depth of knowledge and expertise
+                            to every project, enabling us to deliver exceptional results that drive business growth and
+                            success.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>

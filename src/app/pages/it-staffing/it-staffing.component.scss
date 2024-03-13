@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainBg {
+    // background: linear-gradient(rgba(0, 0, 0, 0.3),
+    //   rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/it-staffing/it-main.png');
+    background-image: url('../../../assets/sourceease/it-staffing/it-main.png');
+    background-size: 100%;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: end;
+}
+
+.bgTxt{
+    font-size: 64px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: normal;
+}
+
+.innerContainer {
+    max-width: 100%;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.image_container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+    transition: .5s ease;
+}
+
+.image_container:hover .overlay {
+    height: 70%;
+}
+
+.boxShadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+// Responsive
+
+@media only screen and (max-device-width: 1980px) and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.25) {
+    .image_container:hover .overlay {
+        height: 90%;
+    }
+}
