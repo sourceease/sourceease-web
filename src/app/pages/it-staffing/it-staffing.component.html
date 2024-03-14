@@ -88,35 +88,36 @@
             <div>
                 <div class="flex flex-row">
                     <div class="basis-2/6">
-                        <div><img class="w-full" src="../../../assets/sourceease/it-staffing/supported.png"
+                        <div class="h-full">
+                            <img class="w-full h-full" src="../../../assets/sourceease/it-staffing/supported.png"
                                 alt="Image Not Fonnd">
                         </div>
                     </div>
-                    <div class="basis-4/6">
+                    <div class="basis-4/6 border-r-2 border-b-2  border-gray-200">
                         <div class="flex flex-row divide-x">
 
                             <!-- Tabs -->
 
-                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 1}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(1)">Web Application Development</div>
-                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 2}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(2)">Mobile Application Development</div>
-                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 3}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(3)">Middleware
                                 Support</div>
-                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 4}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(4)">Business/Artifical
                                 Intelligent</div>
-                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 5}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(5)">Automation Frameworks & Tools</div>
-                            <div class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 6}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(6)">Cloud Based Solution Implementations</div>
                         </div>
 
                         <!-- Content -->
 
                         <div class="">
-                            <div class="flex flex-row gap-18 pt-8 pl-14 pr-8 flex-wrap">
+                            <div class="flex flex-row gap-[6rem] pt-8 pl-14 pr-8 flex-wrap">
                                 <div *ngFor="let item of getFilteredTechnologies()">
                                     <img [src]="item.imageUrl" alt="Icon Not Found">
                                 </div>

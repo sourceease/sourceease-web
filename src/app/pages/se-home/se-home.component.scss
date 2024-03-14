@@ -81,6 +81,10 @@
     animation-delay: 0s;
 }
 
+.custom-b-r {
+    border-radius: 0px 0px 22px 22px;
+}
+
 @keyframes scrolling {
     0% {
         transform: translateX(0%);
@@ -135,5 +139,11 @@
         max-width: 100%;
         width: 90%;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-device-width: 1980px) and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .hello {
+        height: 33rem !important;
     }
 }

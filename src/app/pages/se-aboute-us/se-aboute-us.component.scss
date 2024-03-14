@@ -11,7 +11,7 @@
 }
 
 .boxRadius {
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .diffCornBrdr {
@@ -20,6 +20,10 @@
 .border-r-i {
     border: 3px solid #4242429c;
     border-radius: 35px;
+}
+
+.cus-b-r {
+    border-radius: 0px 0px 20px 0px;
 }
 
 @keyframes scrolling {
