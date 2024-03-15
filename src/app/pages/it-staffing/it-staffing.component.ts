@@ -72,6 +72,9 @@ export class ItStaffingComponent implements OnInit {
   chngTech(tabNumber: number): void {
     this.selectedTab = tabNumber;
   }
+  chngTechMob($event: any): void {
+    this.selectedTab = $event + 1;
+  }
 
   getFilteredTechnologies(): { tech: string, imageUrl: string }[] {
     switch (this.selectedTab) {

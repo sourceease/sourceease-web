@@ -1,7 +1,8 @@
 <div class="container bg-white">
     <div class="mainBg">
-        <div class="mb-14 ml-12">
-            <div class="bgTxt archivo-narrow">"Navigate the Future: Precision-Paced <br> Digital Deliveries, Anytime,
+        <div class="mb-6 lg:mb-14  ml-2 lg:ml-12">
+            <div class="bgTxt archivo-narrow">"Navigate the Future: Precision-Paced <br class="hidden lg:block"> Digital
+                Deliveries, Anytime,
                 Anywhere."</div>
         </div>
     </div>
@@ -33,14 +34,14 @@
         <div>
             <h1 class="text-[#424242] font-bold lg:text-5xl text-3xl mt-11 mb-3 archivo-narrow">Delivery Models
             </h1>
-            <div class="flex flex-row gap-14 mt-8">
+            <div class="flex flex-col lg:flex-row gap-14 mt-8">
                 <div class="basis-full">
                     <div class="image_container">
                         <img src="../../../assets/sourceease/it-staffing/delivery1.png" class="image">
                         <div class="overlay">
-                            <h1 class="text-4xl text-white archivo-narrow text-center font-bold pt-4">Client Managed
+                            <h1 class="text-xl lg:text-4xl text-white archivo-narrow text-center font-bold pt-4">Client Managed
                                 Staffing</h1>
-                            <h2 class="text-xl roboto-font text-justify text-white p-6">Collaborate with us for shared
+                            <h2 class="text-sm lg:text-xl roboto-font text-justify text-white p-6">Collaborate with us for shared
                                 success through our Co-Managed Staffing solution. Work
                                 closely with our team to jointly manage resources and outcomes, leveraging our expertise
                                 and your domain knowledge to drive project success and exceed expectations. </h2>
@@ -51,9 +52,9 @@
                     <div class="image_container">
                         <img src="../../../assets/sourceease/it-staffing/delivery2.png" class="image">
                         <div class="overlay">
-                            <h1 class="text-4xl text-white archivo-narrow text-center font-bold pt-4">Managed Staffing
+                            <h1 class="text-xl lg:text-4xl text-white archivo-narrow text-center font-bold pt-4">Managed Staffing
                             </h1>
-                            <h2 class="text-xl roboto-font text-justify text-white p-6">Experience hassle-free staffing
+                            <h2 class="text-sm lg:text-xl roboto-font text-justify text-white p-6">Experience hassle-free staffing
                                 with our Managed Staffing solution. Benefit from a
                                 dedicated Delivery Manager, outcome-based service, and comprehensive resource
                                 management, allowing you to focus on your core business priorities while we handle the
@@ -66,9 +67,9 @@
                     <div class="image_container">
                         <img src="../../../assets/sourceease/it-staffing/delivery3.png" class="image">
                         <div class="overlay">
-                            <h1 class="text-4xl text-white archivo-narrow text-center font-bold pt-4">Client Managed
+                            <h1 class="text-xl lg:text-4xl text-white archivo-narrow text-center font-bold pt-4">Client Managed
                                 Staffing</h1>
-                            <h2 class="text-xl roboto-font text-justify text-white p-6">Client Managed Staffing
+                            <h2 class="text-sm lg:text-xl roboto-font text-justify text-white p-6">Client Managed Staffing
                                 Empower your organization with full control over your workforce through our Client
                                 Managed Staffing solution. Seamlessly integrate our resources into your operations while
                                 maintaining oversight and direction, ensuring alignment with your business objectives.
@@ -86,37 +87,90 @@
             </h1>
 
             <div>
-                <div class="flex flex-row">
+                <div class="flex flex-col lg:flex-row">
                     <div class="basis-2/6">
                         <div class="h-full">
                             <img class="w-full h-full" src="../../../assets/sourceease/it-staffing/supported.png"
                                 alt="Image Not Fonnd">
                         </div>
                     </div>
-                    <div class="basis-4/6 border-r-2 border-b-2  border-gray-200">
-                        <div class="flex flex-row divide-x">
+                    <div class="basis-4/6 border lg:border-r-2 lg:border-b-2  border-gray-200">
+                        <div class="flex flex-row divide-x lg:block hidden">
 
                             <!-- Tabs -->
 
-                            <div [ngClass]="{'active': selectedTab == 1}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 1}"
+                                class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(1)">Web Application Development</div>
-                            <div [ngClass]="{'active': selectedTab == 2}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 2}"
+                                class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(2)">Mobile Application Development</div>
-                            <div [ngClass]="{'active': selectedTab == 3}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 3}"
+                                class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(3)">Middleware
                                 Support</div>
-                            <div [ngClass]="{'active': selectedTab == 4}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 4}"
+                                class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(4)">Business/Artifical
                                 Intelligent</div>
-                            <div [ngClass]="{'active': selectedTab == 5}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 5}"
+                                class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(5)">Automation Frameworks & Tools</div>
-                            <div [ngClass]="{'active': selectedTab == 6}" class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
+                            <div [ngClass]="{'active': selectedTab == 6}"
+                                class="bg-[#312E81] text-white text-center p-4 font-medium text-xl cursor-pointer"
                                 (click)="chngTech(6)">Cloud Based Solution Implementations</div>
+                        </div>
+
+                        <div class="lg:hidden block mt-6 mb-6">
+                            <mat-tab-group class="snap-x" (selectedIndexChange)="chngTechMob($event)">
+                                <mat-tab class="snap-center" label="Web Application Development">
+                                    <div class="flex flex-row gap-12 pt-8 pl-2 flex-wrap">
+                                        <div *ngFor="let item of getFilteredTechnologies()">
+                                            <img class="w-20" [src]="item.imageUrl" alt="Icon Not Found">
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                                <mat-tab class="snap-center" label="Mobile Application Development">
+                                    <div class="flex flex-row gap-12 pt-8 pl-2 flex-wrap">
+                                        <div *ngFor="let item of getFilteredTechnologies()">
+                                            <img  class="w-20" [src]="item.imageUrl" alt="Icon Not Found">
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                                <mat-tab class="snap-center" label="Middleware Support">
+                                    <div class="flex flex-row gap-12 pt-8 pl-2 flex-wrap">
+                                        <div *ngFor="let item of getFilteredTechnologies()">
+                                            <img  class="w-20" [src]="item.imageUrl" alt="Icon Not Found">
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                                <mat-tab class="snap-center" label="Business/Artifical Intelligent">
+                                    <div class="flex flex-row gap-12 pt-8 pl-2 flex-wrap">
+                                        <div *ngFor="let item of getFilteredTechnologies()">
+                                            <img  class="w-20" [src]="item.imageUrl" alt="Icon Not Found">
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                                <mat-tab class="snap-center" label="Automation Frameworks & Tools">
+                                    <div class="flex flex-row gap-12 pt-8 pl-2 flex-wrap">
+                                        <div *ngFor="let item of getFilteredTechnologies()">
+                                            <img  class="w-20" [src]="item.imageUrl" alt="Icon Not Found">
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                                <mat-tab class="snap-center" label="Cloud Based Solution Implementations">
+                                    <div class="flex flex-row gap-12 pt-8 pl-2 flex-wrap">
+                                        <div *ngFor="let item of getFilteredTechnologies()">
+                                            <img  class="w-20" [src]="item.imageUrl" alt="Icon Not Found">
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                            </mat-tab-group>
                         </div>
 
                         <!-- Content -->
 
-                        <div class="">
+                        <div class="lg:block hidden">
                             <div class="flex flex-row gap-[6rem] pt-8 pl-14 pr-8 flex-wrap">
                                 <div *ngFor="let item of getFilteredTechnologies()">
                                     <img [src]="item.imageUrl" alt="Icon Not Found">
@@ -136,13 +190,15 @@
             <h1 class="text-[#424242] font-bold lg:text-5xl text-3xl mt-18 mb-12 archivo-narrow">Why Choose Us?
             </h1>
 
-            <div class="flex flex-row justify-evenly">
+            <div class="flex flex-col gap-y-8 lg:flex-row justify-evenly">
                 <div class="p-8 basis-1/5 boxShadow">
                     <div>
-                        <div class="text-center"><img class="inline-block" src="../../../assets/sourceease/it-staffing/w1.png" alt="Image Not Found"></div>
+                        <div class="text-center"><img class="inline-block"
+                                src="../../../assets/sourceease/it-staffing/w1.png" alt="Image Not Found"></div>
                     </div>
                     <div>
-                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">Talent
+                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">
+                            Talent
                             Market Place</h1>
 
                         <div class="text-xl roboto-font text-justify text-[#525252]">
@@ -156,10 +212,12 @@
                 </div>
                 <div class="p-8 basis-1/5 boxShadow">
                     <div>
-                        <div class="text-center"><img class="inline-block" src="../../../assets/sourceease/it-staffing/w2.png" alt="Image Not Found"></div>
+                        <div class="text-center"><img class="inline-block"
+                                src="../../../assets/sourceease/it-staffing/w2.png" alt="Image Not Found"></div>
                     </div>
                     <div>
-                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">Product Capability</h1>
+                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">
+                            Product Capability</h1>
 
                         <div class="text-xl roboto-font text-justify text-[#525252]">
                             Centered on product organization, we offer robust business and operational expertise. Our
@@ -172,10 +230,12 @@
                 </div>
                 <div class="p-8 basis-1/5 boxShadow">
                     <div>
-                        <div class="text-center"><img class="inline-block" src="../../../assets/sourceease/it-staffing/w3.png" alt="Image Not Found"></div>
+                        <div class="text-center"><img class="inline-block"
+                                src="../../../assets/sourceease/it-staffing/w3.png" alt="Image Not Found"></div>
                     </div>
                     <div>
-                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">Rich Legacy</h1>
+                        <h1 class="text-[#424242] text-center font-bold lg:text-4xl text-3xl mt-6 mb-5 archivo-narrow">
+                            Rich Legacy</h1>
 
                         <div class="text-xl roboto-font text-justify text-[#525252]">
                             Benefit from our experience in building business and technology capabilities in multiple

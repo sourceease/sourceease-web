@@ -73,7 +73,54 @@
     border-bottom: 2px solid rgba(128, 128, 128, 0.371);
 }
 
+::ng-deep .mat-tab-header {
+    background-color: rgb(49 46 129) !important;
+}
+::ng-deep .mat-tab-label-content {
+    color: #fff !important;
+}
+
+::ng-deep .mat-tab-header-pagination-chevron {
+    border-color: rgb(255 255 255 / 87%) !important;
+}
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ffffff !important;
+}
+
 // Responsive
+
+
+// screen 600
+
+@media(max-width:600px) {
+
+    .bgTxt{
+        font-size: 26px;
+        // width: 23rem;
+        line-height: normal;
+    }
+
+    // mobMain.png
+    .mainBg {
+        background-image: url('../../../assets/sourceease/it-staffing/it-main-mob.png');
+        background-size: 100%;
+        background-size: cover;
+        height: 20rem;
+        display: flex;
+        align-items: end;
+    }
+    .innerContainer {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .overlay {
+        height: 4rem;
+        transition: 0.5s ease;
+    }
+}
+
 
 @media only screen and (max-device-width: 1980px) and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.25) {
     .image_container:hover .overlay {
