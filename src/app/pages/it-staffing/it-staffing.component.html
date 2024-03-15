@@ -177,6 +177,7 @@
                             <div class="flex flex-row gap-[6rem] pt-8 pl-14 pr-8 flex-wrap">
                                 <div *ngFor="let item of getFilteredTechnologies()">
                                     <img [src]="item.imageUrl" alt="Icon Not Found">
+                                    <h1 class="mt-2 font-medium text-center">{{item.techName}}</h1>
                                 </div>
                             </div>
                         </div>
