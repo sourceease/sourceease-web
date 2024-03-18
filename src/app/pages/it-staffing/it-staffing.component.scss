@@ -34,15 +34,15 @@
     margin: 0 auto;
 }
 
-.image_container {
-    position: relative;
-}
+// .image_container {
+//     position: relative;
+// }
 
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+// .image {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+// }
 
 .overlay {
     position: absolute;
@@ -56,9 +56,9 @@
     transition: .5s ease;
 }
 
-.image_container:hover .overlay {
-    height: 70%;
-}
+// .image_container:hover .overlay {
+//     height: 70%;
+// }
 
 .boxShadow {
     border: 0.4px solid #4242429c;
@@ -122,8 +122,8 @@
 }
 
 
-@media only screen and (max-device-width: 1980px) and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.25) {
-    .image_container:hover .overlay {
-        height: 90%;
-    }
-}
+// @media only screen and (max-device-width: 1980px) and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.25) {
+//     .image_container:hover .overlay {
+//         height: 90%;
+//     }
+// }
