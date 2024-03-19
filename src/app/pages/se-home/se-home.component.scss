@@ -77,8 +77,12 @@
 
 .scrolling-content {
     display: inline-flex;
-    animation: scrolling 45s linear infinite alternate;
+    animation: scrolling 25s linear infinite forwards;
     animation-delay: 0s;
+}
+
+.scrolling-container:hover .scrolling-content {
+    animation-play-state:paused;
 }
 
 .custom-b-r {
