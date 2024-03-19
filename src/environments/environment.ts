@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  // baseURL: 'http://122.180.240.197:5406/cd',
-  baseURL: 'https://api.urjobmart.com/cd',
+  baseURL: 'http://122.180.240.197:5406/cd',
+  // baseURL: 'https://api.urjobmart.com/cd',
+
 };
 
 /*
