@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ItStaffingComponent implements OnInit {
 
   selectedTab: number = 1;
+  observer:any;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.ovservElement();
+    this.scrollAnimation();
   }
 
   technologiesIcon = [
@@ -93,6 +96,24 @@ export class ItStaffingComponent implements OnInit {
       default:
         return [];
     }
+  }
+
+  ovservElement() {
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+  }
+
+  scrollAnimation() {
+    const hiddenElements = document.querySelectorAll('.custom-hidden');
+    hiddenElements.forEach((e1) => this.observer.observe(e1));
   }
 
 }
