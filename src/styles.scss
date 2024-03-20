@@ -22,3 +22,28 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+
+// ===========  parallax =============
+
+.parallax {
+    position: relative;
+    z-index: 0;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+
+.parallax-main {
+    --parallax-speed: -20;
+}
+
+.parallax-inner_container {
+    --parallax-speed: -8;
+}
+
+@keyframes parallax {
+    to {
+        transform:
+            translateY(calc(var(--parallax-speed) * 200px));
+    }
+}

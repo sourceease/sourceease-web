@@ -21,14 +21,17 @@
 .mainBg {
     // background-image: url('../../../../../../../../assets/images/sourceease/home/main.png');
     background: linear-gradient(rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/home/main.png');
+            rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/home/main.png');
     background-size: 100%;
     background-size: cover;
     height: 90vh;
     display: flex;
+    z-index: 2;
     align-items: center;
 }
-.bgTxt{
+
+
+.bgTxt {
     font-size: 64px;
     font-weight: 400;
     color: white;
@@ -49,12 +52,15 @@
 .wyItem1 {
     grid-column-start: span 2;
 }
+
 .wyItem2 {
     grid-column-start: span 3;
 }
+
 .wyItem3 {
     grid-column-start: span 3;
 }
+
 .wyItem4 {
     grid-column-start: span 2;
 }
@@ -82,7 +88,7 @@
 }
 
 .scrolling-container:hover .scrolling-content {
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
 
 .custom-b-r {
@@ -108,6 +114,7 @@
 .left_animate:nth-child(2) {
     transition-delay: 300ms;
 }
+
 .left_animate:nth-child(3) {
     transition-delay: 500ms;
 }
@@ -115,9 +122,11 @@
 .left_animate1:nth-child(2) {
     transition-delay: 300ms;
 }
+
 .left_animate1:nth-child(3) {
     transition-delay: 500ms;
 }
+
 .left_animate1:nth-child(4) {
     transition-delay: 700ms;
 }
@@ -133,32 +142,45 @@
     animation-range: entry 50% cover 50%;
 }
 
-.revel_heading {
-    background: linear-gradient(90deg, black, transparent);
-    background-size: 200%;
-    animation: revel both linear;
-    animation-timeline: view();
-    background-repeat: no-repeat;
-    animation-range: entry 50% cover 50%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent !important;
-}
+// .revel_heading {
+//     background: linear-gradient(90deg, black, transparent);
+//     background-size: 200%;
+//     animation: revel both linear;
+//     animation-timeline: view();
+//     background-repeat: no-repeat;
+//     animation-range: entry 50% cover 50%;
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     color: transparent !important;
+// }
 
-@keyframes revel  {
-    from {
-        background-position-x: 200%;
-    }
-    to {
-       background-position-x: 0%;
-    }
-}
+// @keyframes revel {
+//     from {
+//         background-position-x: 200%;
+//     }
+
+//     to {
+//         background-position-x: 0%;
+//     }
+// }
+
+// parallax keyframe
+
+// @keyframes parallax {
+//     to {
+//         transform:
+//             translateY(calc(var(--parallax-speed) * 200px));
+//     }
+// }
 
 // @media (prefers-reduced-motion) {
 //     .custom-hidden {
 //         transition: none;
 //     }
 // }
+
+
+// ====================================================== responsiveness
 
 @keyframes scrolling {
     0% {
@@ -189,16 +211,17 @@
         display: block;
     }
 
-    .bgTxt{
+    .bgTxt {
         font-size: 40px;
         width: 23rem;
         line-height: normal;
     }
+
     // mobMain.png
     .mainBg {
         // background-image: url('../../../../../../../../assets/images/sourceease/home/main.png');
         background: linear-gradient(rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/home/mobMain.png');
+                rgba(0, 0, 0, 0.7)), url('../../../assets/sourceease/home/mobMain.png');
         background-size: 100%;
         background-size: cover;
         height: 20rem;
@@ -206,10 +229,11 @@
         align-items: center;
     }
 
-    .scrolling-content > img {
+    .scrolling-content>img {
         width: 25rem !important;
         height: 3rem !important;
     }
+
     .innerContainer {
         max-width: 100%;
         width: 90%;
