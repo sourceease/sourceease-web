@@ -22,7 +22,7 @@ export class SeContactUsComponent implements OnInit {
       cndt: true,
       rfrr: false,
       mntr: false,
-      cstrTypCd: ['', Validators.required],
+      // cstrTypCd: ['', Validators.required],
       cstrNm: ['', Validators.required],
       cstrEml: ['', [Validators.required, Validators.email]],
       cstrPh: ['', Validators.required],
@@ -32,7 +32,11 @@ export class SeContactUsComponent implements OnInit {
 
   contactUs() {
     console.log(this.registrationForm.getRawValue());
-    this.submitButtonDisable = true;
+    if (this.registrationForm.invalid) {
+      this.registrationForm.markAllAsTouched();
+      return;
+    }
+    // this.submitButtonDisable = true;
     let contactUsData = this.registrationForm.getRawValue();
 
     if (contactUsData.cndt) {
