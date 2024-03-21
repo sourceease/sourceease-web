@@ -142,17 +142,17 @@
     animation-range: entry 50% cover 50%;
 }
 
-// .revel_heading {
-//     background: linear-gradient(90deg, black, transparent);
-//     background-size: 200%;
-//     animation: revel both linear;
-//     animation-timeline: view();
-//     background-repeat: no-repeat;
-//     animation-range: entry 50% cover 50%;
-//     background-clip: text;
-//     -webkit-background-clip: text;
-//     color: transparent !important;
-// }
+.revel_heading {
+    background: linear-gradient(90deg, black, transparent);
+    background-size: 200%;
+    animation: revel both linear;
+    animation-timeline: view();
+    background-repeat: no-repeat;
+    animation-range: entry 50% cover 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+}
 
 // @keyframes revel {
 //     from {
